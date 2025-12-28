@@ -1,0 +1,127 @@
+{
+  "projects": [
+    {
+  "id": 1,
+  "category": "ai",
+  "title": "AI Vision Assistant for Visually Impaired",
+  "shortDesc": "Real-time vision & voice-based assistive AI system.",
+  "fullDesc": "This project is a real-time AI-powered assistive system designed to help visually impaired users understand their surroundings through voice guidance.\n\nStep 1: The system starts by capturing live video using a camera, continuously observing the environment around the user.\n\nStep 2: Each video frame is processed using computer vision and deep learning models to detect people, objects, obstacles, vehicles, and other important elements in real time.\n\nStep 3: Once an object is detected, the system calculates its distance from the user and determines its direction — whether it is on the left, right, or directly in front.\n\nStep 4: If a person’s face is detected, the system checks whether the face is already known. If the person is recognized, the system announces the person’s name. If the face is unknown, the system can ask the user for identification and store the new face for future recognition.\n\nStep 5: The system also detects traffic signals such as red, yellow, and green lights and provides clear voice instructions to help the user navigate roads safely.\n\nStep 6: All detected information is converted into natural voice feedback. Instead of relying on visual output, the system explains the surroundings through speech, making it fully usable without a screen.\n\nFinal Step: The entire system is optimized for real-world usage by combining AI models, hardware devices, and intelligent decision logic to improve safety, independence, and confidence for visually impaired users.",
+  "tech": "Python, OpenCV, Deep Learning, ESP32-CAM, React, Node.js",
+  "impact": "Improves safety, independence, and confidence."
+},
+   {
+  "id": 2,
+  "category": "ai",
+  "title": "Waterborne Disease Prediction System",
+  "shortDesc": "Predicts disease risk using ML & data analytics.",
+  "fullDesc": "Step 1: The system begins by collecting multiple real-world datasets related to waterborne diseases. This includes water quality data, environmental and weather conditions, population density, and historical disease records from affected regions. Step 2: A dedicated water quality analysis model evaluates contamination levels and unsafe water indicators. Step 3: A symptoms-based model analyzes user-reported health symptoms through a question-and-answer interface. Step 4: A weather and environmental model studies rainfall, temperature, humidity, and seasonal patterns. Step 5: A population risk model evaluates population density and water usage patterns. Step 6: Outputs from all models are combined using intelligent decision logic. Step 7: The system predicts whether a region is at risk of a waterborne disease outbreak. Step 8: If risk is detected, alerts are automatically sent to government and health authorities. Final Step: This system enables early disease prevention and protects public health through intelligent predictions.",
+  "tech": "Python, Pandas, Machine Learning, MERN Stack",
+  "impact": "Supports early disease prevention and public health safety.",
+  "github": "https://github.com/somyasahu21/waterborns12",
+  "demo": "https://drive.google.com/file/d/1w21ySU4vgOllg0MG3cmdJG3PF3h5FB0j/view?usp=drive_link"
+},
+   {
+  "id": 12,
+  "category": "ai",
+  "title": "Fake News Detection System",
+  "shortDesc": "AI-powered system that detects fake news from text using NLP and machine learning models.",
+  "fullDesc": "The Fake News Detection System is an AI-based application designed to identify misleading or false news articles. It uses natural language processing techniques to analyze text content and machine learning models trained on labeled news datasets to classify information as real or fake. The system focuses on linguistic patterns, semantics, and statistical features to improve accuracy and reliability.",
+  "tech": "Python, NLP, Machine Learning, Pandas, Scikit-learn",
+  "impact": "Helps reduce misinformation by enabling automated news verification and supporting informed decision-making.",
+  "github": "https://github.com/somyasahu21/fake_news_detection_system-"
+     },
+    {
+  "id": 13,
+  "category": "ai",
+  "title": "Pharma AI – Multi-Agent Research & Report Automation System",
+  "shortDesc": "A multi-agent AI system that automates pharmaceutical research, data analysis, and report generation in minutes instead of days.",
+  "fullDesc": "Pharma AI is an advanced multi-agent intelligent system designed to assist pharmaceutical research workflows. The system uses multiple specialized AI agents that collaborate to perform literature research, medical data analysis, report drafting, and insight generation. Tasks that typically take hours or days—such as analyzing drug data, summarizing medical documents, and generating structured research reports—are completed within minutes. The system is powered by a locally deployed LLM (Ollama 2) and optimized using Retrieval-Augmented Generation (RAG) with LangChain to ensure accurate, fast, and context-aware outputs.",
+  "tech": "Python, Ollama LLM, LangChain, RAG, ChromaDB, HuggingFace Embeddings, Multi-Agent Architecture",
+  "impact": "Significantly reduces pharmaceutical research time, improves report accuracy, and enables faster decision-making in drug development and medical analysis.",
+  "github": "https://github.com/somyasahu21/PharamaAi"
+},
+
+  {
+  "id": 3,
+  "category": "mern",
+  "title": "Vybe – Social Media Platform",
+  "shortDesc": "A full-stack social media application.",
+  "fullDesc": "Step 1: Vybe is a full-stack social media platform built using the MERN stack with secure JWT-based authentication. Step 2: Users can create and manage personalized profiles. Step 3: The platform allows users to create posts and share content. Step 4: Real-time interactions such as likes dynamically update across the application. Step 5: RESTful APIs built with Node.js and Express manage backend operations securely. Step 6: MongoDB stores user data and posts with a scalable schema design. Step 7: React powers a fast, interactive frontend experience. Final Step: Vybe showcases a scalable, production-ready social media architecture with secure authentication and real-time interactions.",
+  "tech": "React, Node.js, Express, MongoDB, JWT",
+  "impact": "Demonstrates scalable full-stack architecture.",
+  "github": "https://github.com/somyasahu21/vybe"
+},
+   {
+  "id": 4,
+  "category": "mern",
+  "title": "College Event Management System",
+  "shortDesc": "Automated event & QR-based attendance system.",
+  "fullDesc": "Step 1: The system automates the entire college event lifecycle with secure role-based access. Step 2: Admins create and manage events using a centralized dashboard. Step 3: Students register online without manual paperwork. Step 4: A unique QR code is generated for each registered participant. Step 5: QR codes are scanned at the event to mark attendance instantly. Step 6: Attendance data updates in real time on the admin dashboard. Step 7: The backend ensures secure, scalable data management using Node.js and MongoDB. Final Step: The system improves efficiency, accuracy, and organization by replacing manual event handling with a fully digital solution.",
+  "tech": "React, Node.js, MongoDB, QR Code",
+  "impact": "Improves efficiency and organization.",
+  "github": "https://github.com/somyasahu21/evently"
+},
+   {
+      "id": 5,
+      "category": "mini",
+      "title": "Text-to-Image Generator",
+      "image": "/projects/tti.png",
+      "shortDesc": "Generates images from text prompts using AI models.",
+      "tech": "Python, AI Models, Frontend UI"
+    },
+    {
+      "id": 6,
+      "category": "mini",
+      "title": "Voice Assistant",
+      "image": "/projects/va.png",
+      "shortDesc": "Voice-controlled assistant using speech recognition and TTS.",
+      "tech": "JavaScript, Web Speech API",
+      "github": "https://github.com/somyasahu21/js"
+    },
+    {
+      "id": 7,
+      "category": "mini",
+      "title": "Language Translator",
+      "image": "/projects/translate.png",
+      "shortDesc": "Translates text between multiple languages in real-time.",
+      "tech": "API, JavaScript, NLP",
+      "github": "https://github.com/somyasahu21/translater"
+    },
+    {
+      "id": 8,
+      "category": "mini",
+      "title": "ChatBot Web App",
+      "image": "/projects/cb.png",
+      "shortDesc": "Conversational AI web app similar to ChatGPT.",
+      "tech": "React, API Integration",
+      "github": "https://github.com/somyasahu21/chat-GPT"
+    },
+    {
+      "id": 9,
+      "category": "mini",
+      "title": "Flutter College App",
+      "image": "/projects/flutter-college.png",
+      "shortDesc": "Mobile app for college information and student access.",
+      "tech": "Flutter, Firebase",
+      "github" : "https://github.com/somyasahu21/college-App"
+    },
+    {
+      "id": 10,
+      "category": "mini",
+      "title": "Image Search Engine",
+      "image": "/projects/ise.png",
+      "shortDesc": "Searches images based on keywords and tags.",
+      "tech": "JavaScript, API, UI",
+      "github": "https://github.com/somyasahu21/image-search-engine"
+    },
+    {
+      "id": 11,
+      "category": "mini",
+      "title": "Gym Website",
+      "image": "/projects/fw.png",
+      "shortDesc": "Responsive fitness website with modern UI.",
+      "tech": "HTML, CSS, JavaScript",
+      "github":"https://github.com/somyasahu21/gym-website"
+    }
+  ]
+}
