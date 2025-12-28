@@ -1,15 +1,48 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNody } from "../ai/useNody";
+import { nodyData } from "../ai/nodyData";
 
 export default function NodyListener() {
   const [listening, setListening] = useState(false);
+  const greetedRef = useRef(false);
 
-  // Initialize NODY
-  useNody(setListening);
+  const { startListening } = useNody(setListening);
+
+  const speak = (text) => {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-IN";
+    u.onend = () => {
+      startListening(); // 🎤 start mic AFTER greeting
+    };
+    window.speechSynthesis.speak(u);
+  };
+
+  useEffect(() => {
+    const handleFirstScroll = () => {
+      if (greetedRef.current) return;
+
+      greetedRef.current = true;
+      speak(nodyData.greeting);
+
+      window.removeEventListener("scroll", handleFirstScroll);
+      window.removeEventListener("wheel", handleFirstScroll);
+      window.removeEventListener("touchmove", handleFirstScroll);
+    };
+
+    window.addEventListener("scroll", handleFirstScroll, { passive: true });
+    window.addEventListener("wheel", handleFirstScroll, { passive: true });
+    window.addEventListener("touchmove", handleFirstScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleFirstScroll);
+      window.removeEventListener("wheel", handleFirstScroll);
+      window.removeEventListener("touchmove", handleFirstScroll);
+    };
+  }, []);
 
   return (
     <>
-      {/* 🎤 LISTENING INDICATOR */}
       {listening && (
         <div
           className="fixed bottom-6 right-6 z-50
