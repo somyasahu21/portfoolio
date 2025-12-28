@@ -82,15 +82,17 @@ export function useNody(setListening) {
     recognition.start();
     recognitionRef.current = recognition;
 
-    /* ===== GREETING (AUTO, UNLOCK SAFE) ===== */
+    /* ===== GREETING ===== */
     speak(nodyData.greeting, recognition);
 
-    /* ===== PROJECT BUTTON LISTENER ===== */
+    /* ===== PROJECT BUTTON LISTENER (FIXED) ===== */
     const handleProjectExplain = (event) => {
       const project = event.detail;
       if (!project) return;
 
       lastProjectRef.current = project;
+
+      // 🔥 IMPORTANT FIX: true passed here
       speak(buildProjectSpeech(project, true), recognition);
     };
 
@@ -107,27 +109,10 @@ export function useNody(setListening) {
       );
     };
   }, []);
-
-  /* ================= EXPOSE CONTROLS (ADDED) ================= */
-  return {
-    startListening: () => {
-      if (recognitionRef.current) {
-        recognitionRef.current.start();
-      }
-    },
-    stopListening: () => {
-      if (recognitionRef.current) {
-        recognitionRef.current.stop();
-      }
-    },
-  };
 }
 
 /* ================= SPEAK ================= */
 function speak(text, recognition) {
-  // 🔐 SAFETY: only speak after user interaction (scroll/click/etc.)
-  if (!window.__NODY_USER_UNLOCKED__) return;
-
   const synth = window.speechSynthesis;
   synth.cancel();
   if (recognition) recognition.stop();
