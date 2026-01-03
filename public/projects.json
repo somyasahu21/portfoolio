@@ -17,7 +17,7 @@
   "fullDesc": "Step 1: The system begins by collecting multiple real-world datasets related to waterborne diseases. This includes water quality data, environmental and weather conditions, population density, and historical disease records from affected regions. Step 2: A dedicated water quality analysis model evaluates contamination levels and unsafe water indicators. Step 3: A symptoms-based model analyzes user-reported health symptoms through a question-and-answer interface. Step 4: A weather and environmental model studies rainfall, temperature, humidity, and seasonal patterns. Step 5: A population risk model evaluates population density and water usage patterns. Step 6: Outputs from all models are combined using intelligent decision logic. Step 7: The system predicts whether a region is at risk of a waterborne disease outbreak. Step 8: If risk is detected, alerts are automatically sent to government and health authorities. Final Step: This system enables early disease prevention and protects public health through intelligent predictions.",
   "tech": "Python, Pandas, Machine Learning, MERN Stack",
   "impact": "Supports early disease prevention and public health safety.",
-  "github": "https://github.com/somyasahu21/waterborns12",
+  "github": "https://github.com/somyasahu21/waterborns",
   "demo": "https://drive.google.com/file/d/1w21ySU4vgOllg0MG3cmdJG3PF3h5FB0j/view?usp=drive_link"
 },
    {
