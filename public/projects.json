@@ -38,7 +38,7 @@
   "fullDesc": "Pharma AI is an advanced multi-agent intelligent system designed to assist pharmaceutical research workflows. The system uses multiple specialized AI agents that collaborate to perform literature research, medical data analysis, report drafting, and insight generation. Tasks that typically take hours or days—such as analyzing drug data, summarizing medical documents, and generating structured research reports—are completed within minutes. The system is powered by a locally deployed LLM (Ollama 2) and optimized using Retrieval-Augmented Generation (RAG) with LangChain to ensure accurate, fast, and context-aware outputs.",
   "tech": "Python, Ollama LLM, LangChain, RAG, ChromaDB, HuggingFace Embeddings, Multi-Agent Architecture",
   "impact": "Significantly reduces pharmaceutical research time, improves report accuracy, and enables faster decision-making in drug development and medical analysis.",
-  "github": "https://github.com/somyasahu21/PharamaAi"
+  "github": "https://github.com/somyasahu21/pharma-AI"
 },
 
   {
