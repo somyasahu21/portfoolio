@@ -69,7 +69,7 @@
   "fullDesc": "SupportAI is a full-stack AI-powered customer support platform that allows businesses to deploy an intelligent chatbot on their website with a single embed script. Admins can configure business details, FAQs, policies, and support knowledge through a secure dashboard. The chatbot uses Google Gemini AI to generate accurate responses strictly based on the provided business knowledge, ensuring reliability and compliance. The system includes authentication, role-based access, real-time AI chat, and a modern, responsive UI built for scalability and production use.",
   "tech": "Next.js 16, React, TypeScript, Node.js, MongoDB, Mongoose, Google Gemini AI, Scalekit Authentication, Tailwind CSS, Framer Motion, REST APIs",
   "impact": "Reduces customer support workload by automating common queries, enables 24/7 instant customer assistance, improves response consistency, and allows non-technical business owners to deploy AI support without coding.",
-  "github": "https://github.com/somyasahu21/support-ai"
+  "github": "https://github.com/somyasahu21/support-ai",
   "demo": "support-ai-994w.vercel.app"
 },
    {
