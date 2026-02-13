@@ -28,7 +28,7 @@
   "fullDesc": "Built a scalable AI-powered SaaS platform that transforms any academic topic into structured, exam-ready study material using prompt-engineered Gemini AI responses. The system enforces strict JSON formatting to generate categorized subtopics (⭐ priority system), revision cheat sheets, important questions, Mermaid-based diagrams, and dynamic analytics charts. Integrated Stripe Checkout with secure webhook-based credit updates and implemented PDF export using server-side PDFKit rendering. Designed a premium, responsive UI with Tailwind CSS and Framer Motion for production-grade user experience.",
   "tech": "React.js, Tailwind CSS, Framer Motion, Node.js, Express.js, MongoDB, Stripe Checkout, Webhooks, Gemini API, PDFKit, Mermaid.js, Recharts",
   "impact": "Developed a monetized AI SaaS solution capable of handling structured AI output, secure payments, and dynamic content visualization — reducing student revision time and enabling scalable exam preparation automation.",
-  "github": "https://github.com/yourusername/examnote-ai",
+  "github": "https://github.com/somyasahu21/AI-notes",
     "demo" : "https://ai-notesfrontend.onrender.com"
 }
 
